@@ -28,11 +28,11 @@ def calculateLeapDays(date):
 
 def calculateGap(date):
     """
-    Calculates the distance between 01.01.1950 and the inputted date.
+    Calculates the gap between 01.01.1950 and the inputted date.
 
     First, we add the full years in between the two dates, then we add leap
     days.
-    The first conditional adds full February, the weirdest month, if the month
+    The first conditional adds a full February, the weirdest month, if the month
     from the input is later.
     Then, we calculate the amount of 31-day months and 30-day months. As they
     interchange (not including February) until August, we must use a slightly
