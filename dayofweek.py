@@ -1,4 +1,4 @@
-#The 1st of January, 1950 is a Sunday. I'll use that as a starting point.
+# The 1st of January, 1950 is a Sunday. I'll use that as a starting point.
 
 def isitLeapYear(year):
     """
@@ -58,28 +58,28 @@ def determineDayofWeek(amountofdays):
     Determines which day of week it will be, based on the calculateGap result.
     """
     if (amountofdays % 7) == 0:
-        dayofweek="Sunday"
+        dayofweek = "Sunday"
     if (amountofdays % 7) == 1:
-        dayofweek="Monday"
+        dayofweek = "Monday"
     if (amountofdays % 7) == 2:
-        dayofweek="Tuesday"
+        dayofweek = "Tuesday"
     if (amountofdays % 7) == 3:
-        dayofweek="Wednesday"
+        dayofweek = "Wednesday"
     if (amountofdays % 7) == 4:
-        dayofweek="Thursday"
+        dayofweek = "Thursday"
     if (amountofdays % 7) == 5:
-        dayofweek="Friday"
+        dayofweek = "Friday"
     if (amountofdays % 7) == 6:
-        dayofweek="Saturday"
+        dayofweek = "Saturday"
     return dayofweek
 
 
 
-inputdate=input("To know what day of week a certain day is, input a date "
+inputdate = input("To know what day of week a certain day is, input a date "
                 "in the following format: DD.MM.YYYY\n")
 
-inputdate=inputdate.split(".")
-result=determineDayofWeek(calculateGap(inputdate))
+inputdate = inputdate.split(".")
+result = determineDayofWeek(calculateGap(inputdate))
 
 print("\nIt is a %s." % result)
 input("\nPress Enter to close the program.")
